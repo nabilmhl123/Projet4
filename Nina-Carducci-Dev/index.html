@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio de photographie de Nina Carducci">
+	
+	
+	
     <title>Portfolio - Nina Carducci Photography</title>
 
     <!-- Balises meta Open Graph pour les réseaux sociaux -->
     <meta property="og:title" content="Portfolio - Nina Carducci Photography">
-    <meta property="og:description" content="Photographe professionnel basé à Bordeaux. Contactez-moi pour vos besoins en photographie.">
+    <meta property="og:description" content="Photographe professionnelle basée à Bordeaux. Contactez-moi pour vos besoins en photographie.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://127.0.0.1:5500/index.html">
     <meta property="og:image" content="https://example.com/assets/images/nina4.png">
@@ -19,31 +22,28 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ninacarducci">
     <meta name="twitter:title" content="Portfolio - Nina Carducci Photography">
-    <meta name="twitter:description" content="Photographe professionnel basé à Bordeaux. Contactez-moi pour vos besoins en photographie.">
+    <meta name="twitter:description" content="Photographe professionnelle basée à Bordeaux. Contactez-moi pour vos besoins en photographie.">
     <meta name="twitter:image" content="https://example.com/assets/images/nina.webp">
     <meta name="twitter:url" content="http://127.0.0.1:5500/index.html">
-    <meta name="description" content="Ceci est la description du site de photographe de Nina Carducci">
 
     <!-- Critical CSS: Load Bootstrap CSS first -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.min.css">
-
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js' integrity='sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==' crossorigin='anonymous'></script>
+	
     <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Non-Critical CSS: Load after critical CSS -->
-    <link rel="stylesheet" href="./assets/style.css" media="all">
+    <link rel="stylesheet" href="./assets/style.min.css">
 
     <!-- Load Google Fonts asynchronously -->
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-
+	
     <!-- Defer JavaScripts to optimize rendering -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" defer></script>
     <script src="./assets/maugallery.min.js" defer></script>
-    <script src="./assets/scripts.js" defer></script>
-	<script src="/Nina-Carducci-Dev/assets/maugallery.js" defer></script>
+	<script src="./assets/script.js" defer></script>
 
     <script type="application/ld+json">
 			{
@@ -86,18 +86,18 @@
 			</script>
 	</head>
 <body>
-<div class="top-header">
+<header class="top-header">
 	<h1 class="name">Nina Carducci</h1>
-	<div class="nav">   
+	<nav class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="log instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="logo instagram"></a></li>
 		</ul>
-	</div>
-</div>
+	</nav>
+</header>
 <div id="header">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
@@ -139,6 +139,7 @@
 		</button>
 	</div>
 </div>
+<main>
 <div id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina.webp" loading="lazy" alt="Portrait d'une femme">
@@ -150,8 +151,8 @@
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
-<div id="gallery">
-	<h3 class="title">Portfolio</h3>
+<section id="gallery">
+	<h3 class="title">Portfolio</h3> 
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" loading="lazy" alt="concert 1"/>
@@ -173,8 +174,8 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-</div>
-<div id="services">
+</section>
+<section id="services">
 	<h4 class="title">Mes services</h4>
 	<div class="container">
 		<div class="service">
@@ -209,8 +210,8 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="quote">
+</section>
+<section class="quote">
 	<figure>
 		<blockquote>
 			<h5 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h5>
@@ -218,7 +219,8 @@
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
-<div id="contact">
+</main>
+<footer id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h6>Une question ? Une demande de devis ?</h6>
@@ -237,6 +239,6 @@
 			<img src="./assets/images/camera.webp" alt="..." loading="lazy">
 		</div>
 	</div>
-</div>
+</footer>
 </body>
 </html>

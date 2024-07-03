@@ -184,7 +184,7 @@
           }
         });
       }
-      let index = 0 + 1,
+      let index = 0,
         next = null;
 
       $(imagesCollection).each(function(i) {
